@@ -1,0 +1,11 @@
+.listWrap {
+  width: 80%;
+  margin: auto;
+  padding-top: 10px;
+}
+
+@media (maxwidth: 640px) {
+  .listWrap {
+    width: 100%;
+  }
+}
