@@ -12,7 +12,7 @@ export default async function MonthList() {
     <>
       <ul>
         {MonthList.map((month) => (
-          <Link href={`/monthly/${month.publishedAt.split("/").join("")}`}>
+          <Link href={`/monthly/${month.publishedAt.split("/").join("")}`} key={month.publishedAt}>
             <li>{(month.publishedAt) + '(' + (month.count) + ')'}</li>
           </Link>
         ))}
