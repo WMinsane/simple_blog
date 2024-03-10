@@ -21,13 +21,13 @@ export default function SearchField() {
   const defaultQuery = searchParams.get('q') || '';
   return (
     <>
-      <h3 className={styles.title}>タイトル検索</h3>
+      <h3 className={styles.title}>全文検索</h3>
       <input
         type="search"
         name="q"
         ref={inputRef}
         className={styles.search}
-        placeholder="Search..."
+        placeholder=""
         onKeyDown={_onEnter}
         onCompositionStart={startComposition}
         onCompositionEnd={endComposition}

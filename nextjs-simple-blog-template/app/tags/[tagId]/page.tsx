@@ -20,7 +20,7 @@ export default async function Page({ params }: Props) {
   const tag = await getTag(tagId);
   return (
     <>
-      <ArticleList articles={data.contents} />
+      <ArticleList articles={data.contents} tag={tag} />
       <Pagination totalCount={data.totalCount} basePath={`/tags/${tagId}`} />
     </>
   );

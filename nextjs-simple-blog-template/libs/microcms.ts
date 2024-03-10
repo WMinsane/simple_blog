@@ -95,3 +95,13 @@ export const getTag = async (contentId: string, queries?: MicroCMSQueries) => {
 
   return detailData;
 };
+
+// 月ごとアーカイブ取得
+export const getMonthList = async () => {
+  const monthList = await client.get(
+    {
+      endpoint: "blog",
+      queries: { fields: "publishedAt", limit: 100 }
+    })
+  return monthList.contents
+}

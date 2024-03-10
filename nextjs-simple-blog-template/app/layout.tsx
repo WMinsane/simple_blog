@@ -1,5 +1,3 @@
-import { getTagList } from '@/libs/microcms';
-import { LIMIT } from '@/constants';
 import Footer from '@/components/Footer';
 import './globals.css';
 import styles from './layout.module.css';
@@ -25,9 +23,6 @@ type Props = {
 };
 
 export default async function RootLayout({ children }: Props) {
-  const tags = await getTagList({
-    limit: LIMIT,
-  });
   return (
     <html lang="ja">
       <body>
