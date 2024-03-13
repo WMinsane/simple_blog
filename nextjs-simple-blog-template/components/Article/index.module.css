@@ -101,7 +101,7 @@
 }
 
 .content pre>code {
-  /* background-color: var(--color-bg-code); */
+  color: #fff;
   background-color: black;
   display: block;
   overflow-x: auto;
@@ -145,6 +145,7 @@
 }
 
 .content a {
+  color: steelblue;
   text-decoration: underline;
 }
 
@@ -234,5 +235,9 @@
 
   .content {
     width: 100%;
+  }
+
+  .content pre>code {
+    font-size: 11px;
   }
 }
